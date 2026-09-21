@@ -1,0 +1,24 @@
+{
+  "EPOUT_SCHEDULE": {
+    "client1": {"time": [6, 12], "cib": "111111", "check_date_and_batch": true},
+    "client2": {"time": [7, 12], "cib": "222222", "check_date_and_batch": true},
+    "client3": {"time": [8, 12], "cib": "333333", "check_date_and_batch": false}
+  },
+  "INSTITUTES": {
+    "1111111": {"name": "client1", "requires": ["PACKET1", "PACKET2"]},
+    "2222222": {"name": "client2", "requires": ["PACKET3"]},
+    "3333333": {"name": "client3", "requires": ["PACKET1", "PACKET2"]},
+    "4444444": {"name": "client4", "requires": ["PACKET1", "PACKET2"]},
+    "5555555": {"name": "client5", "requires": ["PACKET1", "PACKET2"]},
+    "6666666": {"name": "client6", "requires": ["PACKET1", "PACKET2"]}
+  },
+  "EPIN_DEADLINES": {
+    "client1": [20, 12],
+    "client2": [20, 22],
+    "client3": [20, 42],
+    "client4": [20, 52],
+    "client5": [21, 13],
+    "client6": [21, 32],
+    "client7": [23, 22]
+  }
+}
